@@ -182,7 +182,8 @@ main {
     font-size: 1.3rem;
 }
 
-.form-input {
+.form-input,
+.form-textarea {
     width: 100%;
     outline: none;
     border: none;
@@ -191,8 +192,14 @@ main {
     color: #0d0d3b;
 }
 
-.form-input::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
     color: #bebfc9;
+}
+
+.form-textarea {
+    resize: none;
+    max-height: 200px;
 }
 
 .form-error {
@@ -255,4 +262,25 @@ main {
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
     rotate: -45deg;
+}
+
+.submit-box {
+    justify-content: flex-end;
+}
+
+.submit-btn {
+    min-width: 160px;
+    height: 50px;
+    color: #fff;
+    background: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
